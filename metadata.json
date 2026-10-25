@@ -1,0 +1,6 @@
+{
+  "name": "PDF Suite & Document Converter",
+  "description": "All-in-one PDF converter and editor for Web & Android: Convert Word, images, sheets, and text to PDF, merge, split, compress, sign, OCR, with Google Play Store TWA bundle generator and camera document scanner.",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

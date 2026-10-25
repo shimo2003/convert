@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover" />
+    <title>PDF Suite - All-in-One Document & PDF Converter</title>
+    <meta name="description" content="Android-ready PDF suite. Convert Word, images, sheets, and text to PDF, merge, split, compress, sign, and AI OCR scan." />
+    
+    <!-- PWA & Android Meta Tags -->
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="theme-color" content="#dc2626" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="PDF Suite" />
+    <meta name="application-name" content="PDF Suite" />
+    
+    <!-- Open Graph & Social -->
+    <meta property="og:title" content="PDF Suite - Document & PDF Converter" />
+    <meta property="og:description" content="Convert Word, images, text to PDF, merge, split, compress, and AI OCR scan." />
+    <meta property="og:type" content="website" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/favicon.svg" />
+
+    <script>
+      // Register Service Worker for Android PWA / TWA
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js')
+            .then((reg) => console.log('PWA Service Worker registered:', reg.scope))
+            .catch((err) => console.log('Service Worker registration skipped:', err));
+        });
+      }
+    </script>
+  </head>
+  <body class="bg-slate-50 antialiased overscroll-y-none">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

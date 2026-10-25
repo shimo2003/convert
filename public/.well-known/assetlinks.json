@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.pdfsuite.converter",
+      "sha256_cert_fingerprints": [
+        "14:6D:E9:7F:0F:52:EA:43:57:EC:87:47:50:5E:AB:A6:DC:9A:07:44:85:0B:4E:EA:9E:09:4D:3E:59:D9:EC:79"
+      ]
+    }
+  }
+]
